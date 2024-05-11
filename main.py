@@ -28,7 +28,7 @@ class Label(Area):
     def set_text(self, text, fsize, text_color):
         self.image = pygame.font.Font(None, fsize).render(text, True, text_color)
 
-    def draw(self, shift_x=0, shift_y=0):
+    def draw(self, shift_x=10, shift_y=40):
         self.fill()
         mw.blit(self.image, (self.rect.x + shift_x, self.rect.y + shift_y))
 
